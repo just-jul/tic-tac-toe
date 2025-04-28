@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(43, 43, 43);
+    background-image: url('X-2.png');
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.announcement {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 24px;
+    padding: 4px;
+}
+
+.start-button{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 162, 215);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.restart-button{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 162, 215);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.quit-button{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 162, 215);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.game-container {
+    background-color: rgb(185, 130, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.grid-container {
+    height: 450px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gamemode-interface {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(43, 43, 43);
+}
+
+.gamemode-button{
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: rgb(255, 162, 215);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.blurred {
+    filter: blur(4px);
+}
+
+.vs-ai-container {
+    display: flex;
+    gap: 20px;
+}
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.difficulty-text{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+}
+
+.difficulty-choices{
+    appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+
+  background-color: white;
+  font-size: 15px;
+  color: black;
+  padding: 5px 10px;
+  font-family: "Pixelify Sans", sans-serif;;
+
+
+}
+
+label {
+    color: aliceblue;
+}
+
+
+/* ========= GRID BORDERS ========= */
+
+.grid-cell {
+    border: rgb(255, 255, 255) solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 96px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: white;
+}
+
+.grid-cell:first-child {
+    border-left: none;
+    border-top: none;
+}
+
+.grid-cell:nth-child(2) {
+    border-top: none;
+}
+
+.grid-cell:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.grid-cell:nth-child(4) {
+    border-left: none;
+}
+
+.grid-cell:nth-child(6) {
+    border-right: none;
+}
+
+.grid-cell:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.grid-cell:nth-child(8) {
+    border-bottom: none;
+}
+
+.grid-cell:last-child {
+    border-right: none;
+    border-bottom: none;
+}
